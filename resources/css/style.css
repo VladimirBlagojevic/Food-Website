@@ -219,7 +219,7 @@ nav li a:link {
 
 nav li a:hover,
 nav li a:active{
-    border-bottom: 1px solid #FD6721;
+    border-bottom: 2px solid #FD6721;
     padding-bottom: 10px;
 }
 
@@ -258,37 +258,7 @@ nav li a:active{
     background-color: #F7F8FA;
 }
 
-/*----------------------------------------------*/
-/* CHEF'S GALLERY SECTION*/
-/*----------------------------------------------*/
 
-.chefs-gallery{
-    background-color: #F7F8FA;
-    height:580px;
-}
-
-.chefs-gallery h2{
-    margin-bottom: 40px;
-    
-}
-
-
-.chefs-gallery img{
-    display: block;
-    float: left;
-    width:15.66%;
-    margin: 0.5%;
-    border-radius: 5px;
-    box-shadow: 0 2px 2px #b1b1b1;
-    transform: scale(0.90);
-    transition: transform 0.6s; 
-    overflow: hidden; 
-    
-}
-
-.chefs-gallery img:hover{
-    transform: scale(1.2);
-}
 /*----------------------------------------------*/
 /* RECIPES SECTION*/
 /*----------------------------------------------*/
@@ -514,5 +484,107 @@ input[type=submit]{
     width:100%;
     text-align: left;
     margin-left: -12px;
-    
+}
+
+/*----------------------------------------------*/
+/* FOOTER SECTION*/
+/*----------------------------------------------*/
+
+footer{
+    background-color:#fa5102;
+    padding: 50px;
+}
+
+.footer-links,
+.social-links {
+    list-style: none;
+    font-size:90%;
+}
+
+.footer-links li,
+.social-links li{
+    display: inline-block; 
+    padding-right: 15px;
+}
+
+.footer-links li{
+    float: left;
+}
+
+.social-links li {
+    float: right;
+    font-size: 120%;
+}
+
+.social-links li:first-child{
+    padding: 0;
+}
+
+.footer-links li a:link,
+.footer-links li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    color: #cecece;
+}
+.footer-links li a:link,
+.footer-links li a:visited{
+    transition: color 0.4s;
+}
+.footer-links li a:hover,
+.footer-links li a:active{
+    color: #fff;
+}
+
+.fa-youtube,
+.fa-instagram,
+.fa-twitter,
+.fa-facebook-f,
+.fa-pinterest-p{
+    transition: color 0.4s
+}
+
+.fa-pinterest-p:hover{
+    color: #cb2027
+}
+.fa-facebook-f:hover{
+    color:#3b5998;
+}
+.fa-twitter:hover{
+    color: #00aced;
+}
+.fa-instagram:hover{
+    color: #517fa4;
+}
+.fa-youtube:hover{
+    color: #ff0000;
+}
+
+.credits{
+    font-size: 70%;
+    color: #cecece;
+    padding-top: 60px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.credits a:link,
+.credits a:visited{
+    color:#cecece;
+}
+
+.credits a:hover,
+.credits a:active{
+    color: #fff;
+}
+.fa-heart{
+    color:#ff0000;
+    padding: 0 3px;
+    font-size: 140%;
+}
+.love{
+    font-size: 70%;
+    color: #cecece;
+    text-align: center;
+    padding-top: 20px;
 }
