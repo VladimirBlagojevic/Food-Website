@@ -278,7 +278,7 @@ nav li a:active{
     padding: 20px 5px;
 }
 
-.food-card h4{
+.food-card h5{
     display: inline-block;
 }
 .highlighted-card{
@@ -292,6 +292,9 @@ nav li a:active{
     width:550px;
     text-align: center;
 }
+/*----------------------------------------------*/
+/* TESTIMONIALS*/
+/*----------------------------------------------*/
 
 .testimonials{
     background-color:#F7F8FA;
@@ -423,6 +426,9 @@ nav li a:active{
 .iphone-photo{
     
     text-align: right;
+}
+.iphone-photo img{
+    width:80%;
 }
 
 .app-text{
