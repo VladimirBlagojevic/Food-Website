@@ -67,7 +67,11 @@
 @media only screen and (max-width: 768px){
     .hero-text,
     .row{
+        width: 100%;
         padding: 0 4%;
+    }
+    .hero-text{
+        margin-top:30px;
     }
     body{
         font-size: 15px;
@@ -78,16 +82,101 @@
 
     .col{
         width: 100%;
+        margin: 1% 0 1% 0%;
+    }
+
+    instagram h2{
+        margin-bottom: 30px;
     }
     .instagram-gallery li {
         margin-top:0;
         width:100%;
+    }
+    .arrival-photo:first-child{
+        margin-top: 15px;
+    }
+    .box2{
+        margin-bottom: -40px;
+    }
+    nav ul{
+        display: none;
+    }
+    h1{
+        font-size:180%;
         
+    }
+
+    .hero-text p { 
+        font-size: 80%; 
+        
+    }
+
+    .btn{
+        font-size: 70%;
+    }
+
+    h2{
+        font-size: 100%;
+    }
+    .box:first-child{
+        margin-top:20px;
+    }
+    .recipes .long-text{
+        margin-top: 20px;
+        font-size:80%;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .iphone-photo{
+        text-align:center;
+       margin: 0;
+    }
+
+    .iphone-photo img{
+        width:50%;
+    }
+    .app-text{
+        text-align: center;
+        margin-top:0px;
+        font-size: 100%;
+    }
+    .app-text .long-text{
+        text-align: center;
+        font-size: 70%;
+        padding: 3px;
+        margin-bottom: 20px;
+    }
+    .contact-form{
+        font-size: 60%;
+        width: 100%;
+        margin: 0 auto;
+    }
+    input[type=tel] {
+        width: 60%;
+        margin-left: 10%;
+    }
+    input[type=submit]{
+        width: 20%;
+    }
+
+    .iphone-store{
+
+        text-align: center;
+    }
+    .iphone-store img{
+        width:100%;
+        text-align: center;
     }
 }
 
 /*For small phones: from 0 to 480px*/
 @media only screen and (max-width: 480px){
-  
+    body{
+        font-size: 13px;
+    }
+    section{
+        padding: 20px 0;
+    }
     
 }

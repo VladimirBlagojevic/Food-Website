@@ -472,7 +472,6 @@ input[type=submit]{
     color: #fff;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
-
 }
 
 ::-webkit-input-placeholder{
@@ -483,7 +482,7 @@ input[type=submit]{
 
 .iphone-store{
     width: 30%;
-    margin-top: 25px;
+    margin: 10px auto;
 }
 
 .iphone-store img{
