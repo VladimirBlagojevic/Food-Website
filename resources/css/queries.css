@@ -168,7 +168,40 @@
         width:100%;
         text-align: center;
     }
-}
+    .box{
+        padding-right:0;
+        margin-left: 0px;
+    }
+    .social-links,
+    .footer-links {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        
+    }
+    .social-links li,
+    .footer-links li{
+        float:none;   
+    }
+    .social-links li{
+        font-size: 210%;
+    }
+    .footer-links li{
+        font-size: 150%;
+        padding-top:10px;
+    }
+    .social-links li:first-child{
+        padding-right: 15px;
+    }
+    footer{
+        padding:10px;
+    }
+    .credits{
+        display: none;
+    }
+    .love{
+        margin-top: 80px;
+    }
 
 /*For small phones: from 0 to 480px*/
 @media only screen and (max-width: 480px){
