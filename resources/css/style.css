@@ -5,7 +5,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html {
@@ -102,6 +103,7 @@ h5{
     border-radius: 5px;
     font-weight: 300;
     display: inline-block;
+    -webkit-transition: background-color 0.4s, color 0.4s;
     transition: background-color 0.4s, color 0.4s;
 }
 
@@ -117,6 +119,7 @@ h5{
     color:#fff; 
     font-weight: 300;
     display: inline-block;
+    -webkit-transition: background-color 0.6s, color 0.6s, border 0.6s;
     transition: background-color 0.6s, color 0.6s, border 0.6s;
     background-color: #FD6721;
 }
@@ -173,6 +176,7 @@ h5{
 /*----------------------------------------------*/
 
 header{
+    background-image:-webkit-gradient(linear ,left top, left bottom ,from(rgba(0, 0, 0, 0.705)) ,to(rgba(0, 0, 0, 0.705))), url(img/hero-background.jpg);
     background-image:linear-gradient(rgba(0, 0, 0, 0.705) ,rgba(0, 0, 0, 0.705)), url(img/hero-background.jpg);
     background-repeat: no-repeat;
     background-size:cover;
@@ -181,7 +185,7 @@ header{
     background-position: center;
     position: relative;
 }
-
+/*-----Main Nav-----*/
 nav {
     width:100%;
     
@@ -191,16 +195,15 @@ nav img{
     margin-top: 20px;
     height:150px;
     float:left;
-    background-color:transparent;
-    
 }
 
-nav ul{
+.main-nav{
+    display: block;
     float: right;
     list-style: none;
     margin-top: 70px;
 }
-nav ul li{
+.main-nav li{
     display: inline-block;
     margin-left:40px;
     color:#fff;   
@@ -213,6 +216,7 @@ nav li a:link {
     letter-spacing: 2px;
     color:#fff;
     word-spacing: 2px;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
     border-bottom: transparent;
 }
@@ -222,6 +226,51 @@ nav li a:active{
     border-bottom: 2px solid #FD6721;
     padding-bottom: 10px;
 }
+/*-----Sticky Nav-----*/
+.sticky{
+    background-color: rgba(255, 255, 255, 0.952);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-box-shadow: 0 2px 2px #ebeaea;
+            box-shadow: 0 2px 2px #ebeaea;
+}
+
+.sticky img{
+    margin-top:3px;
+    margin-bottom: 5px;
+    height: 60px;
+}
+.sticky .main-nav{
+    margin-top:34px;
+}
+.sticky li a:visited,
+.sticky li a:link {
+    color:#555;  
+}
+
+.sticky .nav-icon{
+    float: right;
+    font-size: 200%;
+    color:#555;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+/*-----Mobile Nav-----*/
+
+.nav-icon{
+    float: right;
+    font-size: 200%;
+    color: #fff;
+    margin-top: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+
 
 .hero-text{
     text-align: center;
@@ -360,7 +409,9 @@ nav li a:active{
     border-radius: 5px;
     background-color:#fff;
     
-    box-decoration-break:clone;
+    -webkit-box-decoration-break:clone;
+    
+            box-decoration-break:clone;
     
 }
 
@@ -411,13 +462,18 @@ nav li a:active{
     width:100%;
     margin:0;
     opacity: 0.7;
-    transform: scale(1.03);
-    transition: transform 0.5s, opacity 0.5s; 
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s; 
 
 }
 .instagram-photo img:hover {
     opacity: 1;
-    transform: scale(1.06);
+    -webkit-transform: scale(1.06);
+            transform: scale(1.06);
 }
 /*----------------------------------------------*/
 /* APP SECTION*/
@@ -534,6 +590,7 @@ footer{
 }
 .footer-links li a:link,
 .footer-links li a:visited{
+    -webkit-transition: color 0.4s;
     transition: color 0.4s;
 }
 .footer-links li a:hover,
@@ -546,6 +603,7 @@ footer{
 .fa-twitter,
 .fa-facebook-f,
 .fa-pinterest-p{
+    -webkit-transition: color 0.4s;
     transition: color 0.4s
 }
 
@@ -592,4 +650,21 @@ footer{
     color: #cecece;
     text-align: center;
     padding-top: 20px;
+}
+
+
+/*----------------------------------------------*/
+/* Animation*/
+/*----------------------------------------------*/
+
+.js--animation-1,
+.js--animation-2,
+.js--animation-4{
+    opacity: 0;
+}
+
+.js--animation-1.animated,
+.js--animation-2.animated,
+.js--animation-4.animated,{
+    opacity: 1;
 }

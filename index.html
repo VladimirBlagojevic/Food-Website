@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/flaticon.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/ionicons.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i" rel="stylesheet">
@@ -18,19 +18,20 @@
         <nav>
             <div class="row">
                 <img src="resources/img/chefd-logo2.png" alt="CHEF'D logo image">
-                <ul>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Meal Plans</a></li>
-                    <li><a href="#">Log in</a></li>
-                    <li><a href="#">Sing up</a></li>
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#shop">shop</a></li>
+                    <li><a href="#meal">Meal Plans</a></li>
+                    <li><a href="#chefs">Chefs</a></li>
+                    <li><a href="#sign">Sign up</a></li>
                 </ul>
+                <a  class="nav-icon"><i class="fas fa-bars"></i></a>
             </div>
         </nav>
         <div class="row">
             <div class="hero-text">
                 <h1>Recipes by Celebrity Chefs &amp; World Renowned Brands</h1>
                 <p>Browse through hundreds of amazing recipes by celebrity chefs and <br>popular food websites</p>
-                <a class="btn" href="#">Find out how it works </a>
+                <a class="btn js--scroll-to-start" href="#">Find out how it works </a>
             </div>
         </div>
         <div class="hero-footer">
@@ -40,11 +41,11 @@
             </div>
         </div>
     </header>
-    <section class="how-it-works">
+    <section class="how-it-works js--how-it-works" >
         <div class="row">
             <h2>How it works</h2>
         </div>
-        <div class="row">
+        <div class="row js--animation-1">
             <div class="col span-1-of-3 box">
                 <i class="flaticon-food-3 icon-big"></i>
                 <h3>Browse Famous Recipes</h3>
@@ -63,7 +64,7 @@
         </div>
     </section>
   
-     <section class="recipes">
+     <section class="recipes" id="meal">
         <div class="row">
             <h2>Get Personalized Recipes</h2>
         </div>
@@ -105,7 +106,7 @@
             <div class="col span-1-of-2 plate-img">
                 <img src="resources/img/plate.jpg" alt="Chef'd food on a plate">
             </div>
-            <div class="col span-1-of-2 user-rating">
+            <div class="col span-1-of-2 user-rating js--animation-2">
                 <div class="cite">
                     <cite><img src="resources/img/user.jpg" alt="Chef'd content customer image">Sue M.</cite>
                 </div>
@@ -126,11 +127,11 @@
             </div>
         </div>
     </section>
-    <section class="new-arrivals">
+    <section class="new-arrivals" id="chefs"
         <div class="row">
             <h2>New Arrivals</h2>
         </div>
-        <div class="row">
+        <div class="row js--animation-3">
             <div class="col span-1-of-3 box2">
                 <div class="arrival-photo">
                     <img src="resources/img/arrival-photo1.jpg" alt="Salmon dish photo">
@@ -172,7 +173,7 @@
             </div>
         </div>
     </section>
-    <section class="instagram">
+    <section class="instagram" id="sign">
         <div class="row">
             <h2>Folow us on instagram <br><a href="#">@chefd</a></h2>
         </div>
@@ -204,9 +205,9 @@
             </li>
         </ul>
     </section>
-    <section class="phone-app">
+    <section class="phone-app" id="shop">
         <div class="row">
-            <div class="col span-1-of-2">
+            <div class="col span-1-of-2 js--animation-4">
                 <figure class="iphone-photo">
                     <img src="resources/img/iPhone-App_Fall-1.png" alt="">
                 </figure>
@@ -256,5 +257,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/srcipt.js"></script>
 </body>
 </html>

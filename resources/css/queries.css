@@ -70,8 +70,12 @@
         width: 100%;
         padding: 0 4%;
     }
+    nav img{
+        height: 80px;
+        margin-top: 10px;
+    }
     .hero-text{
-        margin-top:30px;
+        margin-top:40px;
     }
     body{
         font-size: 15px;
@@ -98,8 +102,25 @@
     .box2{
         margin-bottom: -40px;
     }
-    nav ul{
+    .nav-icon{
+        display: inline-block;
+    }
+    .main-nav{
         display: none;
+        float: left;
+        margin-top: 25px;
+    }
+    .sticky .main-nav{
+        margin-top: 20px;
+    }
+
+    .main-nav li{
+        display: block;
+        padding: 5px 0; 
+    }
+
+    .main-nav li a:hover{
+        border: 0;
     }
     h1{
         font-size:180%;
@@ -212,4 +233,4 @@
         padding: 20px 0;
     }
     
-}
+}}
